@@ -54,7 +54,7 @@ const helpline=document.getElementsByClassName('help-line')
         document.getElementById('coin').innerText = newcoin;
 
 
-        const cartcontainer=document.getElementById('card-sleep');
+        const cartcontainer=document.getElementById('cards-container');
         const newcard=document.createElement("div")
         newcard.innerHTML=`
          <div class="recive flex justify-between p-4 bg-slate-100 rounded-lg my-3">
@@ -72,3 +72,7 @@ const helpline=document.getElementsByClassName('help-line')
         cartcontainer.append(newcard)
     });
 }
+document.getElementById("clear-btn").addEventListener('click', function() {
+    const cardsContainer = document.getElementById("cards-container"); 
+    cardsContainer.innerHTML = ""; 
+});
