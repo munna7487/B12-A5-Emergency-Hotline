@@ -14,10 +14,12 @@
 
 <body>
     <header>
-        <div class="  flex justify-between items-center p-10 bg-white ">
-            <div class="left-side  h-[30px] flex gap-1 items-center ">
+        <div class=" nav-section  flex flex-col md:flex-row justify-between items-center p-10 bg-white  ">
+            <div class="left-side  h-[30px] flex gap-1 items-center mb-4">
                 <img class="h-10" src="./assets/logo.png" alt="">
-                <h1 class="text-[#006747] font-bold"> Emergency <br>Service</h1>
+               <h1 class="text-[#006747] font-bold text-sm md:text-base lg:text-lg leading-tight">
+        Emergency <br class="hidden sm:block"> Service
+      </h1>
             </div>
             <div class="right-side flex gap-4 ">
                 <div class="flex gap-2 items-center bg-[#41FF6B1A] p-2 rounded-l-3xl rounded-r-3xl">
@@ -52,7 +54,10 @@
 
         <section class="card-section bg-[#F5FFF6]">
             <div class="card-container   grid grid-cols-12 w-11/12 mx-auto ">
-                <div class=" left col-span-9 grid grid-cols-3 gap-6 p-6">
+
+                
+                <div class="left col-span-12 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+
 
                     <div class=" bg-white p-5 rounded-xl shadow-gray-400/50 shadow-lg ">
                         <div class="flex justify-between">
@@ -236,7 +241,13 @@
                     </div>
 
                 </div>
-                <div id="  card-sleep" class="  danpash ar div  right  h-72 col-span-3  bg-white my-6 rounded-lg h-auto">
+             
+
+
+
+<div id="card-sleep" class="danpash-ar-div right col-span-12 md:col-span-3 bg-white my-6 rounded-lg h-auto">
+
+
                     <div>
                         <div class="   flex justify-between   p-5 items-center">
                             <p><i class="fa-regular fa-clock"></i>Call History</p>
