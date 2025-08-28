@@ -28,7 +28,7 @@ for (const callbtn of call) {
         // check first, jodi coin 20 er kom hoy return kore dibo
         if (availablecoin < 20) {
             console.log('no money');
-            alert("You have not enough Balance you need at lest 20 coin")
+            alert("You have not enough Balance you need at least 20 coin")
             return;
         }
         else {
